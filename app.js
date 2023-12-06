@@ -64,7 +64,7 @@
 // console.log(animalName, age);
 
 //Spread operator
-//suppose we want to combine 2 arrays into 1 that will contain both array 1 and array 2. 
+//suppose we want to combine 2 arrays into 1 that will contain both array 1 and array 2.
 // const arr1 = [1, 2, 3];
 // const arr2 = [4, 5, 6];
 
@@ -86,4 +86,35 @@
 //Rest pattern---> array
 // If we use three dots on the left side it will become the rest pattern.
 
-const evenNum = []
+// const evenNumbers = [2, 4, 6, 8, 10, 12];
+// const [even1, even2, , ...others] = evenNumbers;
+
+// console.log(even1, even2, others);
+
+// Rest pattern ---> Object
+// As we know that objet operates on property name unlike array it will pack everything inside an array.
+
+// const student = {
+//   studentName: "Minar",
+//   age: 25,
+//   subject: "Chartered Accounting",
+// };
+
+// const { age, ...rest } = student;
+
+// console.log(rest);
+
+//Rest parameter
+// we need to remember a formula in rest parameter.
+//...arg---> spread ---> unpack
+//...param---> rest ---> pack
+
+// function doSum(a,b) {
+//   return a+b;
+// }
+
+// const summation = [1, 2];
+
+// console.log(doSum(...summation)); //1, 2
+
+//Now if we want to add more than just more than 2 number and the array contains numerous number of variables we will use the rest parameter.
